@@ -1,0 +1,47 @@
+@charset "utf-8";
+.sn_topBar {
+  width: 100%;
+  height: 90rem/@baseSize;
+  background: @snColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  a {
+    width: 90rem/@baseSize;
+    height: 90rem/@baseSize;
+    position: absolute;
+    top: 0;
+    &.topBar_left{
+      left: 0;
+      background: url("../images/icon_category.png") no-repeat center/ 44rem/@baseSize 70rem/@baseSize;
+    }
+    &.topBar_right{
+      right: 0;
+      background: url("../images/icon_cart.png") no-repeat center / 63rem/@baseSize 68rem/@baseSize;
+    }
+  }
+  form {
+    width: 100%;
+    height: 90rem/@baseSize;
+    padding: 0 90rem/@baseSize;
+    input {
+      height: 60rem/@baseSize;
+      width: 100%;
+      background: rgba(255,255,255,0.3);
+      font-size: 24rem/@baseSize;
+      margin-top: 15rem/@baseSize;
+      border-radius: 4rem/@baseSize;
+      padding-left: 50rem/@baseSize;
+    }
+    .icon_search {
+      position: absolute;
+      width: 30rem/@baseSize;
+      height: 30rem/@baseSize;
+      background: url("../images/icon_search.png") no-repeat center /27rem/@baseSize 28rem/@baseSize;
+      left: 100rem/@baseSize;
+      top: 30rem/@baseSize;
+    }
+
+  }
+}
